@@ -11,7 +11,7 @@ namespace WpfApp4
     /// </summary>
     public partial class ArticleWindow : Window
     {
-        private readonly string connectionString = "server=localhost;database=newsdb;user=romaina;password=romaina";
+        private readonly string connectionString = "server=localhost;database=newsdb;user=root;password=root";
         private string currentUrl;
         private string currentTitle;
         public ArticleWindow(string articleUrl)
