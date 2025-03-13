@@ -44,10 +44,10 @@ namespace WpfApp4
                                             .ComputeHash(Encoding.UTF8.GetBytes(password)))
                                             .Replace("-", "").ToLower();
 
-                using (MySqlConnection conn = new MySqlConnection("server=localhost;database=newsdb;user=romaina;password=romaina"))
+                using (MySqlConnection conn = new MySqlConnection("server=localhost;database=newsdb;user=root;password=root"))
                 {
                     conn.Open();
-                    string query = "SELECT * FROM users WHERE username=@username AND password_hash=@password";
+                    string query = "SELECT id FROM users WHERE username=@username AND password_hash=@password";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@username", username);
                     cmd.Parameters.AddWithValue("@password", hashedPassword);
