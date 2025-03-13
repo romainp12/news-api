@@ -105,7 +105,7 @@
                 <!-- Spacer -->
                 <StackPanel Grid.Column="1"/>
 
-                <!-- Actions supplémentaires (optionnelles) -->
+                <!-- Actions supplémentaires -->
                 <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
                     <Button Style="{StaticResource ModernButton}"
                             Content="Ajouter aux favoris" 
@@ -153,7 +153,7 @@
                 </StackPanel>
             </Grid>
 
-            <!-- Contenu WebView avec bordure arrondie -->
+            <!-- Contenu WebView -->
             <Border Grid.Row="2" 
                     Background="#FFFFFF" 
                     CornerRadius="10" 
