@@ -26,8 +26,8 @@ namespace WpfApp4
         public MainWindow()
         {
             InitializeComponent();
-            apiKey = "5f187fa0286649a2ba5f9c6e19a66048";
-            connectionString = "server=localhost;database=newsdb;user=romaina;password=romaina";
+            apiKey = "YOUR_NEWS_API_KEY"; // Replace with your NewsAPI Key
+            connectionString = "server=localhost;database=newsdb;user=root;password=root";
             newsApiClient = new NewsApiClient(apiKey);
 
             // Attacher les gestionnaires d'événements pour le déplacement de fenêtre
