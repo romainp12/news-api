@@ -20,7 +20,7 @@ namespace WpfApp4
         public FavoritesWindow()
         {
             InitializeComponent();
-            connectionString = "server=localhost;database=newsdb;user=romaina;password=romaina";
+            connectionString = "server=localhost;database=newsdb;user=root;password=root";
             this.MouseDown += FavoritesWindow_MouseDown;
             LoadFavorites();
         }
