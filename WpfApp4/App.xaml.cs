@@ -11,7 +11,6 @@ namespace WpfApp4
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            // Ici, tu peux ajouter des conditions avant d'ouvrir la fenêtre de connexion
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
         }
